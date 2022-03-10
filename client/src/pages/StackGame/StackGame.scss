@@ -92,3 +92,27 @@
     }
   }
 }
+
+
+.stack-info {
+  padding: 70px 40px;
+
+  h1 {
+    margin-bottom: 7px;
+  }
+
+  ul {
+    span {
+      font-weight: 700;
+      margin-left: 3px;
+    }
+  }
+
+  .below-image {
+    h2 {
+      margin-bottom: 7px;
+    }
+
+    margin-bottom: 10px;
+  }
+}
