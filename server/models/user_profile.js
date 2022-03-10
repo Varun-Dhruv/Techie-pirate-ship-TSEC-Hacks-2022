@@ -11,8 +11,10 @@ const UserSchema = new mongoose.Schema({
       type: String,
       index: { unique: true }
     },
-    password: String
-    
+   password: String,
+   Points_scored_DS :{type: Number, default: 0},
+   Points_scored_OS :{type: Number, default: 0},
+   Points_scored_CCN :{type: Number, default: 0},
   });
   
   module.exports = mongoose.model('User', UserSchema);
