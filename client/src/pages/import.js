@@ -1,0 +1,6 @@
+export {default as Home} from './Home/Home'
+export {default as Profile} from './Profile/Profile'
+export {default as DSAFlow} from './DSAFlow/DSAFlow'
+export {default as StackGame} from './StackGame/StackGame'
+export {default as LinkedList} from './LinkedList/LinkedList'
+export {default as Quiz} from './Quiz/Quiz'

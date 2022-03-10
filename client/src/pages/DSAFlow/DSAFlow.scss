@@ -1,0 +1,115 @@
+.dsa-flow {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    .dsa-flow-img {
+        position: relative;
+        margin-top: 100px;
+        width: 70%;
+
+        img {
+            width: 100%;
+            z-index: -1;
+        }
+
+        .link-box {
+            position: absolute;
+            font-size: 20px;
+            display: grid;
+            place-items: center;
+            width: 140px;
+            height: 140px;
+            background-color: rgb(230, 213, 213);
+            box-shadow: var(--box-shadow);
+            border-radius: 50%;
+            z-index: 2;
+            top: 0;
+            left: 0;
+            cursor: pointer;
+            transition: transform 0.2s ease-in;
+
+            a {
+                &:hover {
+                    color: white;
+                }
+            }
+
+            &:hover{
+                background-color: rgb(177, 165, 165);
+                color: white;
+                transform: scale(1.1);
+            }
+
+            @media screen and (max-width: 1100px) {
+                width: 80px;
+                height: 80px;
+            }
+        }
+
+        .array {
+            top: 4%;
+            left: 44%;
+        }
+
+        .linked-list {
+            top: 14%;
+            left: 75%;
+
+            .link {
+                position: absolute;
+            }
+        }
+
+        .stack {
+            top: 18%;
+            left: 12%;
+
+            .stack-link {
+                position: absolute;
+                color: black;
+            }
+            &:hover {
+                color: white;
+            }
+        }
+
+        .queue {
+            top: 24%;
+            left: 43%;
+        }
+
+        .binary-tree{
+            top: 46%;
+            left: 10%;
+        }
+
+        .heap {
+            top: 47%;
+            left: 46%;
+        }
+
+        .b-tree {
+            top: 46%;
+            left: 79%;
+        }
+
+        .hash {
+            top: 67%;
+            left: 24%;
+        }
+
+        .graph {
+            top: 67%;
+            left: 68%;
+        }
+
+        .end {
+            top: 83%;
+            left: 43%;
+        }
+
+    }
+
+    
+}

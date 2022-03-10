@@ -1,0 +1,114 @@
+.quiz {
+  padding-top: 100px;
+
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .question-bank {
+      padding: 20px 40px;
+
+    .answer {
+        display: none;
+    }
+
+    .question-container {
+        font-size: 20px;
+        margin-bottom: 30px;
+
+        .question {
+          margin-bottom: 10px;
+        }
+
+      .options {
+        margin-bottom: 30px;
+
+        .anim-choice input[type="checkbox"] {
+          appearance: none;
+          -webkit-appearance: none;
+          height: 20px;
+          width: 20px;
+          background-color: #d5d5d5;
+          margin-right: 4px;
+          margin-left: 3px;
+          border-radius: 5px;
+          cursor: pointer;
+          position: relative;
+        }
+
+        .anim-choice label {
+          color: black;
+          margin-left: 10px;
+          cursor: pointer;
+        }
+
+        .anim-choice input[type="checkbox"]::after {
+          font-family: "Font Awesome 5 Free";
+          font-weight: 900;
+          content: "\f00c";
+          position: absolute;
+          height: 100%;
+          width: 100%;
+          padding-top: 4px;
+          text-align: center;
+          font-size: 14px;
+          color: white;
+          display: none;
+          outline: none;
+        }
+
+        .anim-choice input[type="checkbox"]:hover {
+          background-color: #a5a5a5;
+        }
+
+        .anim-choice input[type="checkbox"]:checked {
+          background-color: #5bcd3e;
+        }
+
+        .anim-choice input[type="checkbox"]:disabled {
+          background-color: #9ac790;
+        }
+
+        .anim-choice input[type="checkbox"]:disabled + label {
+          color: rgb(179, 179, 179);
+        }
+
+        .anim-choice input[type="checkbox"]:checked::after {
+          display: block;
+        }
+      }
+    }
+  }
+
+  .btn {
+    margin-top: 30px;
+    width: max-content;
+    cursor: pointer;
+    background: linear-gradient(90deg, #755bea, #ff72c0);
+    padding: 10px 30px;
+    font-size: 20px;
+    border-radius: var(--border-radius-big);
+    color: white;
+    border: none;
+
+    &:hover {
+      background: linear-gradient(90deg, #634fbb, #d863a3);
+    }
+  }
+
+  .score-container {
+    margin-left: 40px;
+    margin-bottom: 100px;
+    font-size: 20px;
+    display: flex;
+
+    h3 {
+      margin-right: 20px;
+    }
+
+    .score {
+      font-size: 20px;
+    }
+  }
+}

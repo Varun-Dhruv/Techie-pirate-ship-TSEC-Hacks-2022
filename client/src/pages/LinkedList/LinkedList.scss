@@ -1,0 +1,125 @@
+.linked-list {
+  padding-top: 110px;
+
+  h1 {
+    text-align: center;
+  }
+
+  .linked-list-container {
+    margin-top: 40px;
+    padding-left: 30px;
+    display: grid;
+    place-items: center;
+    
+    .list-container {
+      display: flex;
+      flex-direction: row;
+
+      .list-element {
+        width: 100px;
+        height: 100px;
+        box-shadow: var(--box-shadow);
+        border-radius: var(--border-radius-sm);
+        background: rgb(38, 57, 97);
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        opacity: 0;
+        transition: opacity 0.8s ease;
+
+        .key {
+          width: 100%;
+          height: 100%;
+          transition: transform 0.8s ease-in;
+          display: grid;
+          place-items: center;
+          z-index: 2;
+          border-radius: var(--border-radius-big);
+
+          img {
+            height: 50px;
+            z-index: -1;
+          }
+
+          &.active {
+              transform: translate(65%,100%);
+          }
+        }
+
+        &.active {
+          opacity: 1;
+        }
+      }
+
+      .line {
+        width: 100px;
+        border-top: 2px solid black;
+        transform: translateY(50%);
+        opacity: 0;
+        transition: opacity 0.8s ease;
+
+        &.active {
+          opacity: 1;
+        }
+      }
+    }
+  }
+
+  .person-container {
+    display: flex;
+    flex-direction: row;
+
+    .person {
+      margin-right: 100px;
+      margin-top: 26px;
+      transform: translateX(45%);
+      width: 100px;
+      opacity: 0;
+      transition: opacity 0.5s ease;
+
+      img {
+        width: 100%;
+      }
+
+      &.active {
+        opacity: 1;
+      }
+    }
+  }
+
+  .message-container {
+      display: flex;
+      margin-top: 10px;
+
+      .message {
+        width: 180px;
+        margin-right: 20px;
+        padding: 10px 20px;
+        background: rgb(245, 239, 239);
+        box-shadow: var(--box-shadow);
+        border-radius: var(--border-radius-sm);
+        opacity: 0;
+
+        &.active {
+            opacity: 1;
+        }
+      }
+  }
+
+  .btn {
+    margin-top: 30px;
+    width: max-content;
+    cursor: pointer;
+    background: linear-gradient(90deg, #755bea, #ff72c0);
+    padding: 10px 30px;
+    font-size: 20px;
+    border-radius: var(--border-radius-big);
+    color: white;
+    border: none;
+
+    &:hover {
+      background: linear-gradient(90deg, #634fbb, #d863a3);
+    }
+  }
+}
