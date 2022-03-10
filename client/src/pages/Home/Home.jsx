@@ -7,7 +7,7 @@ const Home = () => {
   return (
     <div className="home">
       <h1>Gamify CS</h1>
-      <h3>There is nothing that can't be gamified</h3>
+      <h3>There is nothing that can't be gamified!</h3>
     </div>
   );
 };
