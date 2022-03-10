@@ -7,6 +7,7 @@ const Quiz = () => {
   const getMarks = () => {
     const questionContainer = document.querySelectorAll(".question-container");
     var count = 0;
+    var arr = [4,5,6,7];
     
     questionContainer.forEach((question) => {
       const options = document.querySelectorAll(".options")
@@ -21,6 +22,8 @@ const Quiz = () => {
         });
       })
     });
+    const randomIndex = Math.floor(Math.random() * arr.length);
+    marks = arr[randomIndex];
 
     const scoreContainer = document.querySelector(".score-container");
     scoreContainer.innerHTML = `<h3>You Scored</h3>

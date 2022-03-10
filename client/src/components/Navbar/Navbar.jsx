@@ -100,7 +100,7 @@ const Navbar = (props) => {
         )}
       </div>
       <div className="logo">
-        <span>Techie-Pirate</span>
+        <span>By Techie-Pirate</span>
       </div>
       <SearchAndLinks active="active" />
 
